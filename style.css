@@ -1,0 +1,126 @@
+body{
+    margin: 10;
+    font-family:Cambria, Cochin, Georgia, serif;
+    background: linear-gradient(160deg, lavender, #ffe5ec);
+    color:black;
+}
+
+.header-container{
+background-color: #e9d1d0; 
+text-align: center;
+border-radius: 5px;
+padding: 1em 1em;
+}
+.header-container img{
+max-width: 100%;
+width: 5%;
+height: 100%;
+border-radius: px;
+}
+.header-container a {
+color:rgb(192, 89, 55);
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+.About-Me {
+    padding: 1em;
+}
+.About-Me h3{
+color: firebrick;
+margin: 0 0.5 0;
+}
+.skills {
+    background: linear-gradient(135deg, #fdfbff, #ffe6fa);
+    padding: 2em;
+    border-radius: 10px;
+    margin: 2em 0;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: firebrick;
+    margin-bottom: 1em;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.skills li {
+    background: lavender;
+    padding: 0.8em 1em;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* hover effects for list container*/
+.skills li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-title{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: firebrick;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2em;
+    gap: 2em;
+}
+.project-grid{
+    background: linear-gradient(160deg, lavender, #ffe5ec);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.project-grid img{
+    max-width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+.project-grid h4{
+    padding-top: 1.4em;
+    color: brown;
+    display: grid;
+    font-size: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.project-grid p{
+margin: 0.8em 0;
+font-weight: lighter;
+font-family: Georgia, 'Times New Roman', Times, serif;
+display: grid;
+box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+padding: 1em;
+border-radius: 10px;
+margin: 2em 0;
+}
+.project-grid a {
+    text-decoration: none;
+    color: #c21658ce;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
